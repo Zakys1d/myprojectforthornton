@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How to Embed a Video in a Website (Tutorial)</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <h1 class="title">How to Embed a Service-Hosted Video on a Website</h1>
+        <p class="subtitle">
+          This tutorial shows how to embed a video (example: YouTube) using the
+          embed code. Each step includes a screenshot.
+        </p>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="card">
+        <h2 class="card__title">Before you start</h2>
+        <ul class="list">
+          <li>Choose a video that allows embedding (no mature content).</li>
+          <li>Create an <strong>images</strong> folder for your screenshots.</li>
+          <li>Crop each screenshot to show only the important area.</li>
+        </ul>
+      </section>
+
+      <section class="steps">
+        <article class="step card">
+          <div class="step__text">
+            <h2 class="card__title">Step 1: Open the video page</h2>
+            <p class="card__p">
+              Go to the video hosting site (like YouTube) and open the video you
+              want to embed.
+            </p>
+          </div>
+          <img
+            class="step__img"
+            src="images/step1.jpg"
+            alt="Screenshot of opening the video page"
+          />
+        </article>
+
+        <article class="step card">
+          <div class="step__text">
+            <h2 class="card__title">Step 2: Click Share</h2>
+            <p class="card__p">
+              Under the video, click the <strong>Share</strong> button. This opens
+              sharing options.
+            </p>
+          </div>
+          <img
+            class="step__img"
+            src="images/step2.jpg"
+            alt="Screenshot of clicking Share"
+          />
+        </article>
+
+        <article class="step card">
+          <div class="step__text">
+            <h2 class="card__title">Step 3: Choose Embed</h2>
+            <p class="card__p">
+              In the share options, select <strong>Embed</strong>. If you do not
+              see Embed, the uploader may have disabled embedding, so pick a
+              different video.
+            </p>
+          </div>
+          <img
+            class="step__img"
+            src="images/step3.jpg"
+            alt="Screenshot of selecting Embed"
+          />
+        </article>
+
+        <article class="step card">
+          <div class="step__text">
+            <h2 class="card__title">Step 4: Copy the embed code</h2>
+            <p class="card__p">
+              Copy the iframe embed code. It usually starts with
+              <code>&lt;iframe</code>.
+            </p>
+          </div>
+          <img
+            class="step__img"
+            src="images/step4.jpg"
+            alt="Screenshot of copying the embed code"
+          />
+        </article>
+
+        <article class="step card">
+          <div class="step__text">
+            <h2 class="card__title">Step 5: Paste the code into your HTML</h2>
+            <p class="card__p">
+              Open your HTML file in your code editor and paste the embed code
+              where you want the video to appear (usually inside
+              <code>&lt;main&gt;</code>).
+            </p>
+          </div>
+          <img
+            class="step__img"
+            src="images/step5.jpg"
+            alt="Screenshot of pasting the iframe into HTML"
+          />
+        </article>
+      </section>
+
+      <section class="card">
+        <h2 class="card__title">Example embedded video</h2>
+        <p class="card__p">
+          This is the final result. The video below should play directly on the
+          page.
+        </p>
+
+        <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/lfmg-EJ8gm4?si=avffbRRRE8ZghwjO"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <p class="note">
+          Tip: If the video doesn’t show, try a different video—some creators
+          disable embedding.
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>Created by: Max Huk • Date: 05/02/2026</p>
+      </div>
+    </footer>
+  </body>
+</html>
